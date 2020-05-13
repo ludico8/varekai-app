@@ -1,7 +1,10 @@
 const express = require('express');
 const app = express();
+const secure = require('ssl-express-www');
 const path = require('path')
 const morgan = require('morgan');
+
+app.use(secure);
 
 // MIDDLEWARE
 //    logging middleware
